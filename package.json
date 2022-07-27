@@ -1,49 +1,16 @@
 {
-  "name": "erc721-520",
+  "name": "box-game",
   "version": "0.0.1",
-  "description": "Reference implementation of the ERC721-520 non-fungible token standard.",
   "scripts": {
     "test": "npx hardhat test",
     "compile": "npx hardhat compile",
     "flatten": "npx hardhat flatten",
     "coverage": "npx hardhat coverage",
     "solhint": "solhint src/**/*.sol",
-    "deploy:rinkeby": "npx hardhat run --network rinkeby src/deploys/deploy-marry3token.js",
-    "deploy:marry3:rinkeby": "npx hardhat run --network rinkeby src/deploys/deploy-marry3.js",
-    "deploy:mainnet": "npx hardhat run --network mainnet src/deploys/deploy-marry3.js",
-    "burn:rinkeby": "npx hardhat run --network rinkeby src/deploys/burn.js"
+    "deploy:testnet": "npx hardhat run --network testnet src/deploys/deploy.js",
+    "deploy:mainnet": "npx hardhat run --network mainnet src/deploys/deploy.js"
   },
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/marryinweb3/erc721-520"
-  },
-  "bugs": {
-    "url": "https://github.com/marryinweb3/erc721-520/issues"
-  },
-  "homepage": "https://github.com/marryinweb3/erc721-520#readme",
-  "keywords": [
-    "ethereum",
-    "blockchain",
-    "eth",
-    "contract",
-    "contracts",
-    "smart",
-    "smart-contract",
-    "smart-contracts",
-    "token",
-    "tokens",
-    "nft",
-    "nfts",
-    "non-fungible",
-    "non-fungibles",
-    "eip",
-    "erc",
-    "erc520",
-    "erc-520",
-    "deed",
-    "standard"
-  ],
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "2.0.2",
     "@nomiclabs/hardhat-waffle": "2.0.1",

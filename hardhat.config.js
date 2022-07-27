@@ -23,14 +23,13 @@ module.exports = {
     hardhat: {
       initialBaseFeePerGas: 0 // hardhat london fork error fix for coverage
     },
-    rinkeby: {
-      url: "https://rinkeby.infura.io/v3/f4dd6db18a6f4ea98151892c0fa8e074",
-      chainId: 4,
+    testnet: {
+      url: "https://data-seed-prebsc-1-s1.binance.org:8545",
       accounts: [process.env.PRIVATE_KEY_testnet]
     },
     mainnet: {
-      url: "https://mainnet.infura.io/v3/f4dd6db18a6f4ea98151892c0fa8e074",
-      chainId: 1,
+      url: "https://bsc-dataseed1.binance.org",
+      chainId: 56,
       accounts: [process.env.PRIVATE_KEY_mainnet]
     }
   },
